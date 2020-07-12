@@ -2,6 +2,7 @@
 // r Radius in milimeters, like circle()
 // c Corner radius in milimeters
 // $fn Total number of sides, like circle()
+// $fa Angle between sides, like circle()
 
 module RoundedRegularPolygon(n, r, c=0){
 	fn = max(n, ($fn==0) ? 360/$fa : $fn); // valid>$fn>$fa
@@ -22,3 +23,4 @@ module RoundedRegularPolygon(n, r, c=0){
 		}
 	}
 } // Alex Von Hoene, 12 July 2020, cc0, alexvh.me
+
