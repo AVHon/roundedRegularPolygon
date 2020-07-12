@@ -4,7 +4,7 @@
 // $fn Total number of sides, like circle()
 
 module RoundedRegularPolygon(n, r, c=0){
-	fn = (c<=0) ? n : max(n,ceil($fn)); // work with invalid `c` and `$fn`
+	fn = max(n, ($fn==0) ? 360/$fa : $fn); // valid>$fn>$fa
 	m = cos(180/n)*r; // Minor radius (origin to edge midpoint)
 	i = (m-c)/cos(180/n); // Interior radius (origin to rounder center)
 	as = (fn-n)/n; // Average number of exposed Sides per corner
@@ -27,4 +27,4 @@ module RoundedRegularPolygon(n, r, c=0){
 			}
 		}
 	}
-} // Alex Von Hoene, 26 June 2020, cc0, alexvh.me
+} // Alex Von Hoene, 10 July 2020, cc0, alexvh.me
