@@ -1,5 +1,5 @@
 // Make polygons (like circle($fn=n)) with rounded corners.
-// Alex Von Hoene, 12 July 2020, cc0, alexvh.me
+// Alex Von Hoene, 20 July 2020, cc0, alexvh.me
 
 // n Number of corners
 // r Radius in milimeters.
